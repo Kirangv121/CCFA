@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2' // Update this version
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10" // Optional for Kotlin support
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    evaluationDependsOn(":app") // Keep this line here
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

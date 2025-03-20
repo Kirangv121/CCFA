@@ -1,0 +1,44 @@
+name: my_flutter_project
+description: "A new Flutter project."
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=3.5.4 <4.0.0" # Define the SDK version range
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0 # For state management (if needed)
+  file_picker: ^5.0.1 # For file upload functionality
+  cupertino_icons: ^1.0.8 # iOS-style icons for the app
+  http: ^1.2.2 # For making HTTP requests
+  googleapis: ^11.0.0
+  googleapis_auth: ^1.0.0
+  google_sign_in: ^5.0.7
+  email_validator: ^2.0.1 # Email Validator package (correct indentation)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0 # For linting rules to maintain code quality
+
+flutter:
+  uses-material-design: true # Enable Material Design for the app
+  assets:
+    - assets/images/logo.jpg # Example: Image file asset
+    - assets/images/z1.jpg
+    - assets/images/z3.jpg
+    - assets/images/z6.jpg
+    - assets/images/z1.jpg
+    - assets/images/z3.jpg
+    - assets/images/frd_prev.jpg
+    - assets/images/asc.jpg
+    - assets/images/pass.jpg
+    - assets/images/rm.jpg
+    - assets/images/secure.jpg
+    - assets/images/suspi.jpg
+    - assets/images/tfa.jpg
+    - assets/images/logo1.jpg
